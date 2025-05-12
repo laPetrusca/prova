@@ -26,10 +26,10 @@ def stampa(testo):
 
 
 @app.get("/sentiment")
-def stampa(testo):
+def stampa(frase):
     from textblob import TextBlob
 
-    frase = "I'm happy!"
+    #frase = "I'm happy!"
     blob = TextBlob(frase)
 
     # Se sentiment > 0 allora -> positivo
